@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main img{
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+#input{
+    width: 550px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    background: #fff;
+    padding-left: 20px;
+    outline: none;
+    border: 0.1px solid #c5c4c4;
+    transition: 0.5s;
+}
+input:hover{
+    box-shadow: 0px 0px 10px #c5c4c4;
+    transition: 0.5s;
+}
+
+#editButton{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    border:none;
+    background: none;
+    border-radius: 100%;
+    transition: 0.5s;
+    background: white;
+}
+#editButton:hover{
+    box-shadow: 0px 0px 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#editButton img{
+    width: 35%;
+}
+
+
+#styleDiv{
+    display: none;
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #c5c4c4;
+    background: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: 1s;
+}
+#styleDiv header{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+}
+
+
+#midle{
+    width: 100%;
+    height: 76%;
+    display: flex;
+}
+#midle #leftTab{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+#midle #leftTab button{
+    background: none;
+    width: 90%;
+    border: none;
+    text-align: left;
+    padding-left: 10%;
+    border-radius: 0px 50px 50px 0px;
+    height: 30px;
+    margin-bottom: 2%;
+}
+#midle #leftTab .active{
+    background: #6285ba;
+}
+#midle #leftTab button:hover{
+    background: #6285ba;
+    transition: 0.5s;
+}
+
+#midle #backOptions{
+    width: 75%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+}
+#midle #backOptions img{
+    background: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#styleDiv footer{
+    border-top: 1px solid #909090;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#styleDiv footer button{
+    width: 80px;
+    height: 30px;
+    margin-right: 1%;
+    cursor: pointer;
+}
