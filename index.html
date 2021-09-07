@@ -14,13 +14,16 @@
     
     <div id="display">
         <div id="main">
-            <img src="googleLogo.png" alt="">
+            <img onclick="search()" id="logo" src="googleLogo.png" alt="">
 
-            <input id="input" type="text" placeholder="Pesquise no Google ou digite uma URL">
+            <div id="bar">
+                <img id="search" src="search.png" alt="">
+                <input id="input" type="text" placeholder="Pesquise no Google ou digite uma URL">
+            </div>
         </div>
     </div>
 
-    <button id="editButton" onclick="changeThemePage(1)"><img src="pen.png" alt="Edit"></button>
+    <button id="editButton" onclick="changeThemePage(1)"><img src="edit.png" alt="Edit"></button>
 
     <div id="styleDiv">
         <header>
@@ -34,11 +37,12 @@
             </div>
 
             <div id="backOptions">
-                <img id="01" onclick="saveChosenImg('purpleCity.gif', '01')" src="purpleCity.gif" alt="">
-                <img id="02" onclick="saveChosenImg('windows11.jpeg', '02')" src="windows11.jpeg" alt="">
-                <img id="03" onclick="saveChosenImg('cien.jpg', '03')" src="cien.jpg" alt="">
-                <img id="04" onclick="saveChosenImg('jsCup.jpg', '04')" src="jsCup.jpg" alt="">
-                <img id="05" onclick="saveChosenImg('vonVulpes.jpg', '05')" src="vonVulpes.jpg" alt="">
+                <img id="01" onclick="saveChosenImg('background/purpleCity.gif', '01')" src="background/purpleCity.gif" alt="">
+                <img id="02" onclick="saveChosenImg('background/windows11.jpeg', '02')" src="background/windows11.jpeg" alt="">
+                <img id="03" onclick="saveChosenImg('background/cien.jpg', '03')" src="background/cien.jpg" alt="">
+                <img id="04" onclick="saveChosenImg('background/jsCup.jpg', '04')" src="background/jsCup.jpg" alt="">
+                <img id="05" onclick="saveChosenImg('background/vonVulpes.jpg', '05')" src="background/vonVulpes.jpg" alt="">
+                <img id="06" onclick="saveChosenImg('background/firefoxWallpaper.png', '06')" src="background/firefoxWallpaper.png" alt="">
                 
             </div>
 

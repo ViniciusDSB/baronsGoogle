@@ -1,3 +1,10 @@
+let searchButton = document.getElementById('search')
+searchButton.addEventListener('click', () => {
+    let term = document.getElementById('input').value
+    term.replaceAll(' ', '+')
+    window.location.href = `https://www.google.com/search?q=${term}`
+})
+
 document.addEventListener('keydown', (e) => {
     if(e.keyCode !== 13) return;
     let term = document.getElementById('input').value
